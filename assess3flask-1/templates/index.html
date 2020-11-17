@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content%} {% with messages = get_flashed_messages()%} {%if messages%} {%for message in messages %}
+
+
+<form action="/" class="messages">
+    <p class="alert alert-danger">
+        {{message}}
+        <button class="button" action="submit">
+            retry
+        </button> </p>
+    </p>
+
+</form>
+
+{%endfor%} {%endif%} {%endwith%} {% endblock %}

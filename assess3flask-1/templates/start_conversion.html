@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block content %}
+<h1 class="card-header centered"></h1>
+
+<form action="/" class="card-body" methods="POST">
+    <div>
+        <span>After Conversion your have {{converted_symbol}} {{converted_amount}}</span>
+    </div>
+    <button action="submit">RESET</button>
+</form>
+{% endblock %}
